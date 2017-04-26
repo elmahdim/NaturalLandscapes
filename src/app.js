@@ -1,14 +1,22 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
+
 import {
     View,
     Text
 } from 'react-native';
 
+const store = createStore(reducers);
+
 const App = () => {
     return (
-      <View>
-          <Text>Hello from the other side!</Text>
-      </View>
+        <Provider store={store}>
+            <View>
+                <Text>Hello from the other side</Text>
+            </View>
+        </Provider>
     );
 };
 
