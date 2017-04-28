@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import MediaReducer from './MediaReducer';
+import ImageReducer from './ImageReducer';
 
 export default combineReducers({
-    media: MediaReducer
+    images: ImageReducer
 });

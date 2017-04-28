@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
+import ImageList from './components/ImageList';
 
 import {
     View,
@@ -15,6 +16,7 @@ const App = () => {
         <Provider store={store}>
             <View>
                 <Text>Hello from the other side</Text>
+                <ImageList />
             </View>
         </Provider>
     );
